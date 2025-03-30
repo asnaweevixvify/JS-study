@@ -1,0 +1,14 @@
+.dark{
+    background-color: black;
+    color: white;
+}
+.shape{
+    width:200px;
+    height: 200px;
+    background-color: aquamarine;
+}
+.changeColor{
+    width:200px;
+    height: 200px;
+    background-color: brown;
+}
