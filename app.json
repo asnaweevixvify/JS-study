@@ -1,0 +1,17 @@
+{
+    "user" : [
+        {
+            "name" : "asnawee",
+            "age" : 17
+        },
+        {
+            "name" : "anwa",
+            "age" : 12
+        },
+        {
+            "name" : "hanysia",
+            "age" : 15
+        }
+    ]
+    
+}
