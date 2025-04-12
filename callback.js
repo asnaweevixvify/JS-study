@@ -1,3 +1,6 @@
+
+// callback คือฟังก์ชั่นที่ถูกเรียกเมื่อฟังก์ชั่นก่อนหน้าทำเสร็จ
+
 function cal (x,y,callback){ //เติม callback ตรงท้าย เป็นการรับฟังก์ชั่นที่ต้องทำต่อ
     console.log("กำลังคำนวณ....");
     setTimeout(()=>{
@@ -6,7 +9,7 @@ function cal (x,y,callback){ //เติม callback ตรงท้าย เ�
     },3000)
 }
 
-cal(5,10,function(result){
+cal(5,10,(result)=>{
     console.log(result);
 })
 
@@ -25,11 +28,11 @@ function dowloading(url,callback){
     callback(url)
 },2000)}
 
-dowloading(url1,function(result){
+dowloading(url1,(result)=>{
     console.log(`ดาวน์โหลด ${result} เรียบร้อย`);
-    dowloading(url2,function(result){
+    dowloading(url2,(result)=>{
         console.log(`ดาวน์โหลด ${result} เรียบร้อย`);
-        dowloading(url3,function(result){
+        dowloading(url3,(result)=>{
             console.log(`ดาวน์โหลด ${result} เรียบร้อย`);
         })
     })
